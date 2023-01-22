@@ -1,0 +1,73 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    /* Group Utilities */
+        .navItems_a {
+            @apply hover:text-menuTextHover duration-300;
+        }
+        .navItems_I {
+            @apply text-[10px] align-middle;
+        }
+        .btn_primary {
+            @apply text-white text-lg bg-buttonBg py-[14px] px-[28px] rounded-full font-opens font-semibold hover:bg-transparent hover:text-buttonTextHover hover:ring-2 hover:ring-buttonBg hover:ring-inset focus:ring-4 focus:ring-buttonTextHover focus:bg-transparent focus:ring-inset duration-300;
+        }
+        .btn_secondary{
+            @apply text-white text-lg bg-buttonBg py-[14px] px-[28px] rounded-full font-opens font-semibold hover:bg-transparent hover:text-menuTextHover hover:ring-2 hover:ring-buttonBg hover:ring-inset focus:text-menuTextHover focus:ring-4 focus:ring-menuTextHover focus:bg-transparent focus:ring-inset duration-300;
+        }
+        .countdownMainDiv{
+            @apply flex w-full py-24;
+        }
+        .countdownItemDiv{
+            @apply flex-auto w-1/4 text-center text-5xl;
+        }
+        .countdownItemH3{
+            @apply font-extrabold text-[64px] font-opens text-menuTextHover;
+        }
+        .countdownItemP{
+            @apply text-4xl leading-10 font-opens font-bold pt-6 capitalize;
+        }
+        .whyChooseUsItemHover{
+            @apply w-full px-7 py-[50px] hover:bg-white drop-shadow-[10px_30px_60px_rgba(162,169,192,0.25)] rounded-xl duration-500;
+        }
+        .whyChooseUsH3{
+            @apply text-5xl font-bold font-opens text-whyChooseH3;
+        }
+        .whyChooseUsP{
+            @apply text-whyChooseP font-normal font-papri text-lg leading-[30px];
+        }
+        .whatWeDoItems{
+            @apply flex-auto basis-1/4 p-[45px] rounded-[20px] bg-white drop-shadow-[0_30px_60px_rgba(162,169,192,0.25)] hover:bg-homeOverlay duration-300 relative text-center flex flex-col items-center;
+        }
+        .btn_WhatWeDoItems{
+            @apply justify-center items-center 
+            text-whyChooseH3 
+            bg-[#1BBF00]/40
+            py-[14px] px-[28px] rounded-full
+            font-opens font-bold text-lg
+            group-hover:bg-white/40
+            group-hover:text-[#F4F4F5] duration-300;
+        }
+        .whatWeDoItemsH3{
+            @apply mt-8 capitalize text-3xl text-whyChooseH3 font-bold group-hover:text-[#FAFAFE];
+        }
+        .whatWeDoItemsP{
+            @apply py-5 font-papri font-normal leading-8 text-lg text-whyChooseP group-hover:text-[#E6E5F3];
+        }
+        .weCreateItemsH3{
+            @apply capitalize text-3xl text-whyChooseH3 font-bold;
+        }
+        .weCreateItemsP{
+            @apply font-papri font-normal leading-8 text-lg text-whyChooseP;
+        }
+        .plansMainDiv{
+            @apply flex-auto basis-1/4 bg-white rounded-[20px] text-center drop-shadow-[0_30px_60px_rgba(162,169,192,0.15)];
+        }
+        .plansEmojiDiv{
+            @apply w-full h-[170px] bg-[#ECEDF0]/50 group-hover:bg-white/20 mt-6 mb-5 flex justify-center items-center;
+        }
+        .plansEmojiPrice{
+            @apply text-center text-menuTextHover font-naruto text-5xl font-extrabold first-letter:text-2xl first-letter:align-top;
+        }
+    }
