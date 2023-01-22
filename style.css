@@ -62,7 +62,7 @@
             @apply font-papri font-normal leading-8 text-lg text-whyChooseP;
         }
         .plansMainDiv{
-            @apply flex-auto basis-1/4 bg-white rounded-[20px] text-center drop-shadow-[0_30px_60px_rgba(162,169,192,0.15)];
+            @apply basis-1/4 bg-white rounded-[20px] text-center drop-shadow-[0_30px_60px_rgba(162,169,192,0.15)];
         }
         .plansEmojiDiv{
             @apply w-full h-[170px] bg-[#ECEDF0]/50 group-hover:bg-white/20 mt-6 mb-5 flex justify-center items-center;
